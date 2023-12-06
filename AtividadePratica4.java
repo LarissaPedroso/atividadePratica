@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class AtividadePratica4 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		float numero1;
 		float numero2;
 		float numero3;
@@ -27,9 +26,7 @@ public class AtividadePratica4 {
 		numero4 = leia.nextFloat();
 		
 		calculo = (numero1*numero2) - (numero3*numero4);
-		
 		System.out.printf("Resultado: %.2f", calculo);
-		
 	}
 
 }
