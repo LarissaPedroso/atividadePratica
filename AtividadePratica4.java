@@ -5,27 +5,25 @@ import java.util.Scanner;
 public class AtividadePratica4 {
 
 	public static void main(String[] args) {
-		float numero1;
-		float numero2;
-		float numero3;
-		float numero4;
-		float calculo;
-		
+		float n1, n2, n3, n4, calculo;
+
 		Scanner leia = new Scanner(System.in);
 		
 		System.out.print("Numero 1: ");
-		numero1 = leia.nextFloat();
+		n1 = leia.nextFloat();
 		
 		System.out.print("Numero 2: ");
-		numero2 = leia.nextFloat();
+		n2 = leia.nextFloat();
 		
 		System.out.print("Numero 3: ");
-		numero3 = leia.nextFloat();
+		n3 = leia.nextFloat();
 		
 		System.out.print("Numero 4: ");
-		numero4 = leia.nextFloat();
+		n4 = leia.nextFloat();
 		
-		calculo = (numero1*numero2) - (numero3*numero4);
+		leia.close();
+		
+		calculo = (n1*n2) - (n3*n4);
 		System.out.printf("Resultado: %.2f", calculo);
 	}
 

@@ -5,12 +5,8 @@ import java.util.Scanner;
 public class AtividadePratica3 {
 
 	public static void main(String[] args) {
-		double salarioBruto;
-		double adicionalNoturno;
-		double horasExtras;
-		double descontos;
-		double salarioLiquido;
-		
+		double salarioBruto, adicionalNoturno, horasExtras, descontos, salarioLiquido;
+	
 		Scanner leia = new Scanner(System.in);
 		
 		System.out.print("Salário Bruto: ");
@@ -24,6 +20,8 @@ public class AtividadePratica3 {
 		
 		System.out.print("Descontos: ");
 		descontos = leia.nextDouble();
+		
+		leia.close();
 		
 		salarioLiquido = (salarioBruto + adicionalNoturno + (horasExtras*5) - descontos);
 		System.out.printf("Salário Liquido: %.2f", salarioLiquido);
